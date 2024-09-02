@@ -91,6 +91,24 @@ out
 .nuxt
 dist
 
+build/
+.DS_Store
+.env
+
+.vscode/
+.vs/
+*.code-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+*.tmp
+*.temp
+.cache/
+
+coverage/
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
