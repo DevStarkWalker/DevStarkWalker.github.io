@@ -6,17 +6,18 @@ const HomePage = () => {
     <div className="homepage">
       <header className="banner">
         <div className="logo-container">
-          <img src="/path-to-your-logo.png" alt="Novaeh Studios Logo" className="logo" />
+          <img src="/PlaceHolderLogo.png" alt="Novaeh Studios Logo" className="logo" />
         </div>
-        <nav className="nav-bar">
-          <button className="nav-button" onClick={() => window.location.href = '/media'}>Media</button>
-          <button className="nav-button" onClick={() => window.location.href = '/games'}>Games</button>
-          <button className="nav-button" onClick={() => window.location.href = '/web-design'}>Web Design</button>
-        </nav>
+        <div className="nav-bar">
+          <a href="/media" className="nav-link">Media</a>
+          <a href="/games" className="nav-link">Games</a>
+          <a href="/web-design" className="nav-link">Web Design</a>
+        </div>
       </header>
       <section className="homepage-content">
         <div className="homepage-intro">
-          <h2>Explore the latest projects and take a look at the vision.</h2>
+          <h2>Novaeh Studios</h2>
+          <p>From concept to creation, giving visions life.</p>
         </div>
       </section>
     </div>

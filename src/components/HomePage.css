@@ -1,80 +1,93 @@
+/* General page styling */
 .homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to bottom,#aa9101, #000000 );
-    color: #FFD700;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0.5) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 1000;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 150px;
-    height: auto;
-  }
-  
-  .nav-bar {
-    display: flex;
-  }
-  
-  .nav-button {
-    background-color: #FFD700;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .nav-button:hover {
-    background-color: #fff;
-    transform: scale(1.1);
-  }
-  
-  .homepage-content {
-    margin-top: 100px; /* Adjust this value to ensure content isn't hidden behind the banner */
-    max-width: 800px;
-  }
-  
-  .homepage-intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #FFD700;
-    animation: fadeInUp 2s ease-in-out 1.5s;
-  }
-  
-  .homepage-intro p {
-    font-size: 1.2rem;
-    color: #fff;
-  }
-  
-  /* Animations */
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000; /* Solid black background */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Body styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: white;
+}
+
+/* Banner styling */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column; /* Stack logo and nav vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px 0; /* Padding for spacing */
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+/* Logo container styling */
+.logo-container {
+  margin-bottom: 10px; /* Space between logo and nav bar */
+}
+
+.logo {
+  height: 80px; /* Adjust as per your logo size */
+  width: auto;
+}
+
+/* Nav bar styling */
+.nav-bar {
+  display: flex;
+  justify-content: center; /* Center items within the nav bar */
+  gap: 30px; /* Adjust spacing between links */
+}
+
+.nav-link {
+  color: #fff; /* White text */
+  font-size: 1.2rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Gold on hover */
+}
+
+/* Main content styling */
+.homepage {
+  padding-top: 120px; /* Adds space below the fixed header */
+}
+
+.homepage-content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.homepage-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); /* White outline effect */
+}
+
+.homepage-intro p {
+  font-size: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
