@@ -1,8 +1,9 @@
+// Layout.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Make sure to use React Router for navigation
-import './HomePage.css';
+import { Outlet } from 'react-router-dom';
+import './HomePage.css'; // Import the CSS file here
 
-const HomePage = () => {
+const Layout = () => {
   return (
     <div className="homepage">
       <header className="banner">
@@ -18,14 +19,11 @@ const HomePage = () => {
           </Link>
         </div>
       </header>
-      <section className="homepage-content">
-        <div className="homepage-intro">
-          <h2>Novaeh Studios</h2>
-          <p>From concept to creation, giving visions life.</p>
-        </div>
-      </section>
+      <main className="homepage-content">
+        <Outlet /> {/* This will render the current page component */}
+      </main>
     </div>
   );
 };
 
-export default HomePage;
+export default Layout;

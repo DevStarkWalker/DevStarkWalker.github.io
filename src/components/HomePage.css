@@ -30,21 +30,11 @@ body, html {
   width: 100%;
   background-color: #000;
   display: flex;
-  flex-direction: column; /* Stack logo and nav vertically */
+  flex-direction: column; /* Stack nav and logo vertically */
   align-items: center; /* Center content horizontally */
   padding: 20px 0; /* Padding for spacing */
   z-index: 1000;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
-}
-
-/* Logo container styling */
-.logo-container {
-  margin-bottom: 10px; /* Space between logo and nav bar */
-}
-
-.logo {
-  height: 80px; /* Adjust as per your logo size */
-  width: auto;
 }
 
 /* Nav bar styling */
@@ -52,8 +42,10 @@ body, html {
   display: flex;
   justify-content: center; /* Center items within the nav bar */
   gap: 30px; /* Adjust spacing between links */
+  margin-bottom: 10px; /* Space between nav bar and logo */
 }
 
+/* Nav link styling */
 .nav-link {
   color: #fff; /* White text */
   font-size: 1.2rem;
@@ -64,6 +56,16 @@ body, html {
 
 .nav-link:hover {
   color: #FFD700; /* Gold on hover */
+}
+
+/* Logo container styling */
+.logo-container {
+  margin-bottom: 10px; /* Space between logo and nav bar */
+}
+
+.logo {
+  height: 80px; /* Adjust as per your logo size */
+  width: auto;
 }
 
 /* Main content styling */
