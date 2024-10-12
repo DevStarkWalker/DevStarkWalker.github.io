@@ -1,3 +1,11 @@
 /* Add this to your CSS file */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
 
+
+.footer {
+    background-color: #12151B;
+    color: #DBA555;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #DBA555;
+}

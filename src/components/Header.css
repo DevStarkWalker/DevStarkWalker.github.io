@@ -1,0 +1,54 @@
+/* Add this to your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #12151B;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 20px;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #DBA555;
+  margin-left: 70px;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-decoration: none;
+
+}
+
+.logo a {
+  margin: 0 15px;
+  color: #DBA555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo a:hover {
+  color: white;
+}
+
+.left-nav-menu, .right-nav-menu {
+  display: flex;
+}
+
+.left-nav-menu a, .right-nav-menu a {
+  margin: 0 15px;
+  color: #DBA555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.left-nav-menu a:hover, .right-nav-menu a:hover {
+  color: white;
+}

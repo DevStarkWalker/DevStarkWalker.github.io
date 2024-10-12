@@ -1,0 +1,58 @@
+/* Add this to your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.services-section {
+    background-color: #12151B;
+    color: #DBA555;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-title {
+    
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #DBA555;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: #12151B;
+    padding: 40px;
+    color: #DBA555;
+    width:80%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    font-size: 1.5rem;
+}
+
+
+.service-icon {
+    font-size: 6rem;
+    color: #DBA555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
