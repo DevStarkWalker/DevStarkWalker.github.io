@@ -1,0 +1,104 @@
+/* ContactUs.css */
+
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  padding: 2rem;
+  background-color: #12151B; /* Dark background color */
+  color: #DBA555; /* Gold color */
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh; /* Ensure the container takes full height */
+}
+
+.contact-us-logo {
+  margin-bottom: 0; /* Remove bottom margin */
+  background-color: #12151B;
+  display: flex; /* Enable flexbox for centering */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Allow it to take full width */
+}
+
+.logo-image {
+  width: 150px; /* Set width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.contact-section {
+  max-width: 800px; /* Set max width for the contact section */
+  text-align: center;
+  margin: 0; /* Remove margin to eliminate gap */
+  padding: 2rem 0; /* Add padding if needed */
+  background-color: transparent; /* Remove background color */
+  color: #DBA555; /* Gold color */
+  border: none; /* Remove borders */
+  box-shadow: none; /* Remove shadows */
+}
+
+.section-title {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #DBA555; /* Gold color */
+  margin-bottom: 1rem;
+  text-decoration: none; /* Remove underline */
+}
+
+.section-description {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #DBA555; /* Gold color */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Form styles remain unchanged */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Maximum width for the form */
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #DBA555;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #DBA555;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent; /* Keep it transparent to blend with the background */
+  color: #DBA555; /* Gold color for text */
+}
+
+.form-textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 150px; /* Set a default height for the textarea */
+}
+
+.form-button {
+  padding: 10px;
+  background-color: #DBA555; /* Gold background color */
+  color: #12151B; /* Dark text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #c49a45; /* Darker gold on hover */
+}
