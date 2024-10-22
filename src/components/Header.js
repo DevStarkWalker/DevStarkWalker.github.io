@@ -15,9 +15,7 @@ const Header = () => {
             </nav>
                 
             <nav className="right-nav-menu">
-                <Link to="/media">Media</Link>
-                <Link to="/game-development">Games</Link>
-                <Link to="/web-design">Web Design</Link>
+                <Link to="/gallery">Gallery</Link>
             </nav>
         </header>
     );

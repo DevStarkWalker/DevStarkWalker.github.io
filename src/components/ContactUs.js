@@ -8,10 +8,11 @@ const ContactUs = () => {
   return (
     <div className="contact-us-page">
       <Header /> {/* Header component */}
+      <div className="contact-us-container">
         <div className="contact-us-logo">
           <img src={Newlogo} alt="Newlogo" className="logo-image" />
-          </div>
-        <div className="contact-us-container">
+        </div>
+        
         <h2 className="section-title">Contact Us</h2>
         <p className="section-description">
           We’d love to hear from you! Whether you have a question about our services, need assistance, or just want to chat, feel free to reach out.

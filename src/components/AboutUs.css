@@ -16,7 +16,8 @@
 }
 
 .about-us-logo {
-  margin-bottom: 2rem;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .logo-image {
@@ -41,8 +42,8 @@
   font-weight: 700;
   font-size: 2.5rem;
   color: #DBA555; /* Gold color */
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #DBA555; /* Gold color underline */
+  margin-bottom: 100px;
+  font-style: none;
 }
 
 .section-description {

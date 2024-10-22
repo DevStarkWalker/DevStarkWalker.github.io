@@ -1,0 +1,232 @@
+/* Gallery.css */
+
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.gallery-container {
+  background-color: #12151B; /* Dark background color */
+  color: #DBA555; /* Gold color */
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.gallery-main {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.gallery-logo {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.logo-image {
+  width: 300px;
+  height: auto;
+}
+
+
+.gallery-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #DBA555; /* Gold color */
+  margin-bottom: 100px;
+}
+
+.gallery-description {
+  font-size: 1.5rem;
+  margin-bottom: 100px;
+  color: #DBA555;                                                                         
+}
+
+.gallery-section {
+  margin: 3rem 0;
+  margin-bottom: 300px;
+}
+
+.section-heading {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #DBA555; /* Gold color */
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit for better centering */
+  gap: 3rem; /* Uniform gap between items */
+  justify-content: center; /* Centers the grid items within the container */
+  justify-items: center; /* Centers items within their grid cells */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensures the grid spans the entire container */
+  margin-bottom: 100px;
+}
+
+/* Styles for logo items (square boxes) */
+.media-item-logo {
+  background-color: #1E222B; /* Slightly lighter dark background */
+  border: 2px solid #DBA555; /* Gold border */
+  border-radius: 8px;
+  padding: 1rem;
+  color: #DBA555; /* Gold color */
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px; /* Square width */
+  height: 250px; /* Square height */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Styles for game and webpage items (landscape rectangles) */
+.media-item-game, .media-item-webpage {
+  background-color: #1E222B; /* Slightly lighter dark background */
+  border: 2px solid #DBA555; /* Gold border */
+  border-radius: 8px;
+  padding: 1rem;
+  color: #DBA555; /* Gold color */
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 480px; /* Adjusted width for landscape rectangle */
+  height: 270px; /* Height to maintain 16:9 ratio */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Ensure consistent hover effects */
+.media-item-logo:hover,
+.media-item-game:hover,
+.media-item-webpage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Flip card styles for logos */
+.flip-card-logo {
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner-logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-logo.flipped .flip-card-inner-logo {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-logo,
+.flip-card-back-logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border: 2px solid #DBA555;
+  border-radius: 8px;
+}
+
+.flip-card-back-logo {
+  background-color: #1B1F26;
+  transform: rotateY(180deg);
+}
+
+/* Flip card styles for games */
+.flip-card-game {
+  width: 480px; /* Adjusted width for landscape rectangle */
+  height: 270px; /* Height to maintain 16:9 ratio */
+  perspective: 1000px;
+}
+
+.flip-card-inner-game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-game.flipped .flip-card-inner-game {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-game,
+.flip-card-back-game {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border: 2px solid #DBA555;
+  border-radius: 8px;
+}
+
+.flip-card-back-game {
+  background-color: #1B1F26;
+  transform: rotateY(180deg);
+}
+
+/* Flip card styles for webpages */
+.flip-card-webpage {
+  width: 480px; /* Adjusted width for landscape rectangle */
+  height: 270px; /* Height to maintain 16:9 ratio */
+  perspective: 1000px;
+}
+
+.flip-card-inner-webpage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-webpage.flipped .flip-card-inner-webpage {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-webpage,
+.flip-card-back-webpage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border: 2px solid #DBA555;
+  border-radius: 8px;
+}
+
+.flip-card-back-webpage {
+  background-color: #1B1F26;
+  transform: rotateY(180deg);
+}
+
+/* Ensure consistent hover effects */
+.flip-card-logo:hover,
+.flip-card-game:hover,
+.flip-card-webpage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
