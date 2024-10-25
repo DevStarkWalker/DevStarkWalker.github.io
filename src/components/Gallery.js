@@ -8,6 +8,7 @@ import Logo3 from './images/Final Unit Chef Logo.png';
 import Logo4 from './images/Oneill5.png';
 import WebPage1 from './images/PersonalPortfolioPic.png';
 import WebPage2 from './images/NovaehPage.png'
+import Game1 from "./images/Chubby Title Screen V1.png"
 
 const Media = () => {
     const [flippedCards, setFlippedCards] = useState({});
@@ -34,9 +35,9 @@ const Media = () => {
                     <div className="gallery-section logos-section">
                         <h2 className="section-heading">Logos</h2>
                         <div className="media-grid">
-                            {[{ src: Logo1, id: 'logo1', text: 'Logo 1 Details' },
-                              { src: Logo3, id: 'logo3', text: 'Logo 3 Details' },
-                              { src: Logo4, id: 'logo4', text: 'Logo 4 Details' }].map((logo) => (
+                            {[{ src: Logo1, id: 'logo1', text: 'This bold and dynamic logo features two cartoon characters standing back-to-back, each wielding pressure washers, symbolizing teamwork and strength. The strong title "Grunts Pressure Washing" reflects the company’s reliable and tough cleaning services.' },
+                              { src: Logo3, id: 'logo3', text: 'A sleek and minimalistic design, this logo showcases a simple yet striking chef illustration, combined with the bold letters "UC" for Unit Chef. It perfectly captures the essence of clean and efficient branding for a sports-focused Instagram page.' },
+                              { src: Logo4, id: 'logo4', text: 'This elegant gold and black logo brings a touch of sophistication, featuring a beautiful blend of a rose and heather. It highlights the luxury and care associated with Heather O’Neill Real Estate’s services.' }].map((logo) => (
                                 <div
                                     key={logo.id}
                                     className={`flip-card-logo ${flippedCards[logo.id] ? 'flipped' : ''}`}
@@ -59,7 +60,7 @@ const Media = () => {
                     <div className="gallery-section games-section">
                         <h2 className="section-heading">Games</h2>
                         <div className="media-grid">
-                            {[{ src: WebPage1, id: 'Game1', text: 'Game 1 Details' },].map((game) => (
+                            {[{ src: Game1, id: 'Game1', text: 'Chubby Chickens is a fun and chaotic multiplayer game that is in development by Novaeh Studios. The main idea is teamwork is key! Players control chubby, adorable chickens as they work together to navigate obstacle-filled levels while dodging incoming projectiles.' },].map((game) => (
                                 <div
                                     key={game.id}
                                     className={`flip-card-game ${flippedCards[game.id] ? 'flipped' : ''}`}
@@ -83,7 +84,7 @@ const Media = () => {
                         <h2 className="section-heading">Webpages</h2>
                         <div className="media-grid"> 
                         {[{ src: WebPage1, id: 'Web1', text: 'This is my personal portfolio, which has developed alot over the years. It showcases my artistic touch mixed with a showcase of my projects and work.' },
-                          { src: WebPage2, id: 'Web2', text: 'This website was design and developed by Novaeh Studios. It provides information on our services and core beleifs, while showcasing our web development and design capabilities.'  }].map((webpage) => (
+                          { src: WebPage2, id: 'Web2', text: 'The Novaeh webpage was design and developed by Novaeh Studios. It provides information on our services and core beleifs, while showcasing our web development and design capabilities.'  }].map((webpage) => (
                                 <div
                                     key={webpage.id}
                                     className={`flip-card-webpage ${flippedCards[webpage.id] ? 'flipped' : ''}`}
