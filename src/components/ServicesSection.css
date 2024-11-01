@@ -56,3 +56,31 @@
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 1.8rem; /* Further reduce for smaller screens */
+        text-align: center;
+    }
+
+    .service-card{
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .service-icon{
+        font-size: 2rem ;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .service-card h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+}

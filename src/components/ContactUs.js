@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import './ContactUs.css'; // Import the CSS for styling
-import emailjs from 'emailjs-com';
 import Header from './Header'; // Adjust the path to your Header component
 import Footer from './Footer'; // Adjust the path to your Footer component
 import Newlogo from './Newlogo.png'; // Update with the correct path to your logo
@@ -20,17 +19,31 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send(
-      'service_qygse8u',     // Replace with your EmailJS service ID
-      'template_604swag',     // Replace with your EmailJS template ID
-      formData,               // Pass the form data
-      'pTbsQOHabH1geQ_jj'
-    ).then((result) => {
-      alert("Message sent successfully!");
-    }).catch((error) => {
-      alert("Failed to send the message, please try again.");
-    });
+  
+    fetch("https://formspree.io/f/manyebal", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message
+      })
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Message sent successfully!");
+        } else {
+          alert("Failed to send the message, please try again.");
+        }
+      })
+      .catch((error) => {
+        console.error("Formspree Error:", error);
+        alert("Failed to send the message, please try again.");
+      });
   };
+  
 
   return (
     <div className="contact-us-page">

@@ -5,7 +5,7 @@ import './Gallery.css'; // Importing the CSS file for styling
 import Newlogo from './Newlogo.png';
 import Logo1 from './images/version 2.png';
 import Logo3 from './images/Final Unit Chef Logo.png';
-import Logo4 from './images/Oneill5.png';
+import Logo4 from './images/HOPE Logo.jpeg';
 import WebPage1 from './images/PersonalPortfolioPic.png';
 import WebPage2 from './images/NovaehPage.png'
 import Game1 from "./images/Chubby Title Screen V1.png"
@@ -37,7 +37,7 @@ const Media = () => {
                         <div className="media-grid">
                             {[{ src: Logo1, id: 'logo1', text: 'This bold and dynamic logo features two cartoon characters standing back-to-back, each wielding pressure washers, symbolizing teamwork and strength. The strong title "Grunts Pressure Washing" reflects the company’s reliable and tough cleaning services.' },
                               { src: Logo3, id: 'logo3', text: 'A sleek and minimalistic design, this logo showcases a simple yet striking chef illustration, combined with the bold letters "UC" for Unit Chef. It perfectly captures the essence of clean and efficient branding for a sports-focused Instagram page.' },
-                              { src: Logo4, id: 'logo4', text: 'This elegant gold and black logo brings a touch of sophistication, featuring a beautiful blend of a rose and heather. It highlights the luxury and care associated with Heather O’Neill Real Estate’s services.' }].map((logo) => (
+                              { src: Logo4, id: 'logo4', text: 'This elegant gold and black logo brings a touch of sophistication, featuring a beautiful butterfly, symbolizing transformation, hope and new beginnings. This logo highlights and aligns with their mission to guide clients to their luxurious dream home.' }].map((logo) => (
                                 <div
                                     key={logo.id}
                                     className={`flip-card-logo ${flippedCards[logo.id] ? 'flipped' : ''}`}
@@ -83,7 +83,7 @@ const Media = () => {
                     <div className="gallery-section webpages-section">
                         <h2 className="section-heading">Webpages</h2>
                         <div className="media-grid"> 
-                        {[{ src: WebPage1, id: 'Web1', text: 'This is my personal portfolio, which has developed alot over the years. It showcases my artistic touch mixed with a showcase of my projects and work.' },
+                        {[{ src: WebPage1, id: 'Web1', text: 'This portfolio represents the creative journey and expertise of our CEO, whose personal dedication to artistry and innovation has shaped the heart of our company. Over the years, it has evolved into a sophisticated display of unique projects and achievements, merging a refined artistic vision with technical precision.' },
                           { src: WebPage2, id: 'Web2', text: 'The Novaeh webpage was design and developed by Novaeh Studios. It provides information on our services and core beleifs, while showcasing our web development and design capabilities.'  }].map((webpage) => (
                                 <div
                                     key={webpage.id}

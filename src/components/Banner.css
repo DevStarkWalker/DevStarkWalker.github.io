@@ -18,7 +18,8 @@
 }
 
 .banner-logo {
-    width: 300px; /* Adjust size to fit the design */
+    width: 80%; /* Adjust size to fit the design */
+    max-width: 300px;
     height: auto;
     margin: 0 20px; /* Adds spacing between the logo and the text */
 }
@@ -29,4 +30,19 @@
     font-size: 4rem;
     color: #DBA555;
     margin: 0 15px; /* Adds spacing between text and logo */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .banner{
+        order: -1;
+    }
+
+    .banner-text {
+        font-size: 1rem; /* Further reduce for smaller screens */
+    }
+
+    .banner-logo{
+     width: 20%;   
+    } 
 }

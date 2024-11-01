@@ -49,6 +49,7 @@
 .section-description {
   font-size: 1.5rem;
   line-height: 1.6;
+  text-align: center;
   color: #DBA555; /* Gold color */
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 100px;

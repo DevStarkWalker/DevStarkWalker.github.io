@@ -11,10 +11,11 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .logo {
+  min-width: 315px;
   flex: 1;
   text-align: center;
   font-size: 1.8rem;
@@ -22,9 +23,9 @@
   margin-right: 130px;
   font-family: "Cinzel Decorative", serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: none;
-
+  text-wrap: nowrap;
 }
 
 .logo a {
@@ -40,6 +41,7 @@
 
 .left-nav-menu, .right-nav-menu {
   display: flex;
+  gap: 15px;
 }
 
 .left-nav-menu a, .right-nav-menu a {
@@ -51,4 +53,28 @@
 
 .left-nav-menu a:hover, .right-nav-menu a:hover {
   color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center;
+      padding: 20px 20px;
+  }
+
+  .left-nav-menu,
+  .right-nav-menu {
+    text-align: center;
+      flex-direction: column; /* Stack menu items */
+      gap: 20px; /* Reduce spacing */
+      margin-bottom: 20px;
+  }
+
+  .logo {
+      font-size: 2rem; /* Increase logo size on mobile */
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
 }
