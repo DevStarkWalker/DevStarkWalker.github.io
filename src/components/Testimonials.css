@@ -1,0 +1,97 @@
+/* Testimonial.css */
+
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #12151B;
+  color: #DBA555;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.testimonial-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #DBA555;
+  margin-bottom: 2rem;
+}
+
+.testimonial-description {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #DBA555;
+  margin-bottom: 2rem;
+}
+
+.testimonial-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #DBA555;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #DBA555;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  color: #DBA555;
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.form-button {
+  padding: 10px;
+  background-color: #DBA555;
+  color: #12151B;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #c49a45;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .testimonial-title {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-description {
+    font-size: 1.2rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.9rem;
+  }
+
+  .form-button {
+    font-size: 1rem;
+  }
+}

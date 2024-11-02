@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './HomePage.css';
 import Header from './Header';
 import Banner from './Banner';
@@ -7,8 +7,17 @@ import Footer from './Footer';
 
 const HomePage = () => {
   const servicesRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+
+    window.addEventListener('resize', handleResize);
+
     // Scroll down by 100 pixels when the component mounts
     window.scrollTo(0, 100);
 
@@ -34,14 +43,24 @@ const HomePage = () => {
 
     // Cleanup the event listener on component unmount
     return () => {
+      window.removeEventListener('resize', handleResize);
       document.removeEventListener('click', handleClick);
     };
   }, []);
 
   return (
     <div className="homepage">
-      <Header />
-      <Banner />
+      {isMobile ? (
+        <>
+          <Banner />
+          <Header />
+        </>
+      ) : (
+        <>
+          <Header />
+          <Banner />
+        </>
+      )}
       <div ref={servicesRef}>
         <ServicesSection />
       </div>

@@ -36,10 +36,12 @@
 @media (max-width: 768px) {
     .banner{
         order: -1;
+        padding: 20px 20px;
     }
 
     .banner-text {
         font-size: 1rem; /* Further reduce for smaller screens */
+        display: none;
     }
 
     .banner-logo{

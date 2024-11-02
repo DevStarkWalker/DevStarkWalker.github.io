@@ -49,12 +49,9 @@ const ContactUs = () => {
     <div className="contact-us-page">
       <Header />
       <div className="contact-us-container">
-        <div className="contact-us-logo">
-          <img src={Newlogo} alt="Newlogo" className="logo-image" />
-        </div>
-        
-        <h2 className="section-title">Contact Us</h2>
-        <p className="section-description">
+      <img src={Newlogo} alt="Newlogo" className="contact-us-logo-image" />
+        <h2 className="contact-us-section-title">Contact Us</h2>
+        <p className="contact-us-section-description">
           We’d love to hear from you! Whether you have a question about our services, need assistance, or just want to chat, feel free to reach out.
         </p>
         <form className="contact-form" onSubmit={handleSubmit}>

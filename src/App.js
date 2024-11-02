@@ -5,6 +5,8 @@ import HomePage from './components/HomePage';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Gallery from './components/Gallery';
+import Testimonials from './components/Testimonials'; // Singular, not plural
+
 
 
 
@@ -17,6 +19,7 @@ const App = () => {
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/contact-us" element={<ContactUs />} />
                 <Route path="/gallery" element={<Gallery />} />
+                <Route path ="/testimonials" element={<Testimonials/>} />
                 {/* Add other routes as needed */}
             </Routes>
         </Router>

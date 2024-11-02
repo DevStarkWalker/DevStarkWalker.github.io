@@ -18,12 +18,11 @@
 .about-us-logo {
   margin-top: 200px;
   margin-bottom: 200px;
-}
-
-.logo-image {
-  width: 150px;
+  width: 80%;
+  max-width: 300px;
   height: auto;
 }
+
 
 .about-section,
 .logo-section {
@@ -37,7 +36,7 @@
   box-shadow: none; /* Remove shadows */
 }
 
-.section-title {
+.about-us-section-title {
   font-family: 'Cinzel Decorative', serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -46,9 +45,29 @@
   font-style: none;
 }
 
-.section-description {
+.about-us-section-description {
   font-size: 1.5rem;
   line-height: 1.6;
   color: #DBA555; /* Gold color */
   font-family: 'Montserrat', sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+  .about-us-logo{
+   width: 30%;   
+   margin-top: 200px;
+   margin-bottom: 50px;
+  } 
+
+  .about-us-section-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .about-us-section-description {
+    font-size: 1rem;
+  }
+
 }

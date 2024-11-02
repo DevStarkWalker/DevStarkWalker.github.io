@@ -9,12 +9,10 @@ const AboutUs = () => {
     <div className="about-us-page">
       <Header /> {/* Header component */}
       <div className="about-us-container">
-        <div className="about-us-logo">
-          <img src={Newlogo} alt="Newlogo" className="logo-image" />
-        </div>
+        <img src={Newlogo} alt="Newlogo" className="about-us-logo" />
         <section className="about-section">
-          <h2 className="section-title">About Us</h2>
-          <p className="section-description">
+          <h2 className="about-us-section-title">About Us</h2>
+          <p className="about-us-section-description">
                 At Novaeh Studios, we are passionate creators dedicated to turning visions into reality. 
                 Founded and led by our CEO, creator, and developer, our company thrives on transforming ideas into exceptional digital experiences. 
                 From crafting unique logos and engaging animations to developing captivating web pages and innovative games, we bring creativity and precision into every project.
@@ -26,8 +24,8 @@ const AboutUs = () => {
           </p>
         </section>
         <section className="logo-section">
-          <h2 className="section-title">The Logo</h2>
-          <p className="section-description">
+          <h2 className="about-us-section-title">The Logo</h2>
+          <p className="about-us-section-description">
           Our logo features a depiction of Daedalus, the legendary craftsman and innovator from Greek mythology, symbolizing creativity, skill, and the power of bringing ideas to life.
           Known as the master artisan who created some of the most ingenious inventions in myth, Daedalus represents the spirit of Novaeh Studios—a place where vision meets creation.
           The image of Daedalus forging, with the prominent "N" on the anvil, beautifully aligns with our mission of transforming concepts into reality. 

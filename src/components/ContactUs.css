@@ -16,17 +16,14 @@
 
 }
 
-.contact-us-logo {
+.contact-us-logo-image {
   margin-top: 200px;
   margin-bottom: 200px;
-}
-
-.logo-image {
   width: 300px;
   height: auto;
 }
 
-.contact-section {
+.contact-us-contact-section {
   max-width: 800px;
   text-align: center;
   margin: 2rem 0;
@@ -37,7 +34,7 @@
   box-shadow: none; /* Remove shadows */
 }
 
-.section-title {
+.contact-us-section-title {
   font-family: 'Cinzel Decorative', serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -46,7 +43,7 @@
   font-style: none;
 }
 
-.section-description {
+.contact-us-section-description {
   font-size: 1.5rem;
   line-height: 1.6;
   text-align: center;
@@ -100,4 +97,25 @@
 
 .form-button:hover {
   background-color: #c49a45; /* Darker gold on hover */
+}
+
+@media (max-width: 768px) {
+
+
+  .contact-us-logo-image{
+    width: 30%;   
+    margin-top: 200px;
+    margin-bottom: 50px;
+   } 
+ 
+   .contact-us-section-title{
+     font-size: 1.5rem;
+     margin-bottom: 10px;
+   }
+ 
+   .contact-us-section-description {
+     font-size: 1rem;
+   }
+ 
+
 }
