@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NovaehWebPage/static/css/main.831b6416.css",
+    "main.js": "/NovaehWebPage/static/js/main.7921ccca.js",
+    "static/media/Chubby Title Screen V1.png": "/NovaehWebPage/static/media/Chubby Title Screen V1.167a9ebf745b62a67356.png",
+    "static/media/version 2.png": "/NovaehWebPage/static/media/version 2.58ce4de963a2ab6340e6.png",
+    "static/media/Newlogo.png": "/NovaehWebPage/static/media/Newlogo.b1a24d1291048d44bfb3.png",
+    "static/media/HOPE Logo.jpeg": "/NovaehWebPage/static/media/HOPE Logo.7702183bbf386f33e8bd.jpeg",
+    "static/media/PersonalPortfolioPic.png": "/NovaehWebPage/static/media/PersonalPortfolioPic.ae140496a07f4891bbde.png",
+    "static/media/Final Unit Chef Logo.png": "/NovaehWebPage/static/media/Final Unit Chef Logo.3744d991660c49281728.png",
+    "static/media/NovaehPage.png": "/NovaehWebPage/static/media/NovaehPage.f6ec416769b28004bde7.png",
+    "index.html": "/NovaehWebPage/index.html",
+    "main.831b6416.css.map": "/NovaehWebPage/static/css/main.831b6416.css.map",
+    "main.7921ccca.js.map": "/NovaehWebPage/static/js/main.7921ccca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.831b6416.css",
+    "static/js/main.7921ccca.js"
+  ]
+}
