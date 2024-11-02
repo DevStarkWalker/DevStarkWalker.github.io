@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NovaehWebPage/static/css/main.831b6416.css",
-    "main.js": "/NovaehWebPage/static/js/main.7921ccca.js",
+    "main.js": "/NovaehWebPage/static/js/main.90aa857b.js",
     "static/media/Chubby Title Screen V1.png": "/NovaehWebPage/static/media/Chubby Title Screen V1.167a9ebf745b62a67356.png",
     "static/media/version 2.png": "/NovaehWebPage/static/media/version 2.58ce4de963a2ab6340e6.png",
     "static/media/Newlogo.png": "/NovaehWebPage/static/media/Newlogo.b1a24d1291048d44bfb3.png",
@@ -11,10 +11,10 @@
     "static/media/NovaehPage.png": "/NovaehWebPage/static/media/NovaehPage.f6ec416769b28004bde7.png",
     "index.html": "/NovaehWebPage/index.html",
     "main.831b6416.css.map": "/NovaehWebPage/static/css/main.831b6416.css.map",
-    "main.7921ccca.js.map": "/NovaehWebPage/static/js/main.7921ccca.js.map"
+    "main.90aa857b.js.map": "/NovaehWebPage/static/js/main.90aa857b.js.map"
   },
   "entrypoints": [
     "static/css/main.831b6416.css",
-    "static/js/main.7921ccca.js"
+    "static/js/main.90aa857b.js"
   ]
 }
