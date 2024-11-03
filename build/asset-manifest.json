@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a792984d.css",
-    "main.js": "/static/js/main.11fbaebd.js",
+    "main.css": "/static/css/main.4bbe6284.css",
+    "main.js": "/static/js/main.864d1a8a.js",
     "static/media/Chubby Title Screen V1.png": "/static/media/Chubby Title Screen V1.167a9ebf745b62a67356.png",
     "static/media/version 2.png": "/static/media/version 2.58ce4de963a2ab6340e6.png",
     "static/media/Newlogo.png": "/static/media/Newlogo.b1a24d1291048d44bfb3.png",
@@ -10,11 +10,11 @@
     "static/media/Final Unit Chef Logo.png": "/static/media/Final Unit Chef Logo.3744d991660c49281728.png",
     "static/media/NovaehPage.png": "/static/media/NovaehPage.f6ec416769b28004bde7.png",
     "index.html": "/index.html",
-    "main.a792984d.css.map": "/static/css/main.a792984d.css.map",
-    "main.11fbaebd.js.map": "/static/js/main.11fbaebd.js.map"
+    "main.4bbe6284.css.map": "/static/css/main.4bbe6284.css.map",
+    "main.864d1a8a.js.map": "/static/js/main.864d1a8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a792984d.css",
-    "static/js/main.11fbaebd.js"
+    "static/css/main.4bbe6284.css",
+    "static/js/main.864d1a8a.js"
   ]
 }
