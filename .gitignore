@@ -2,7 +2,7 @@
 node_modules/
 
 # Production build output
-build/
+/build
 
 # Logs
 npm-debug.log*
