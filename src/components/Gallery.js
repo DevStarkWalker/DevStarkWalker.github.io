@@ -24,9 +24,8 @@ const Media = () => {
         <div className='gallery-page'>
             <Header />
             <div className="gallery-container">
-            <img src={Newlogo} alt="Newlogo" className="gallery-logo-image" />
-
-                <main className="gallery-main">
+                <img src={Newlogo} alt="Newlogo" className="gallery-logo-image" />
+                <div className="gallery-section">
                     <h1 className="gallery-title">Gallery</h1>
                     <p className="gallery-description">Explore our portfolio showcasing a collection of logos, game projects, and web designs.</p>
 
@@ -101,7 +100,7 @@ const Media = () => {
                             ))}
                         </div>
                     </div>
-                </main>
+                </div>
                 <Footer />
             </div>
         </div>

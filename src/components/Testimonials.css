@@ -15,12 +15,19 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.testimonial-section {
+  max-width: 800px;
+  text-align: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+
 .testimonial-title {
   font-family: 'Cinzel Decorative', serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #DBA555;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .testimonial-description {
@@ -79,11 +86,11 @@
 /* Media Queries */
 @media (max-width: 768px) {
   .testimonial-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .testimonial-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .form-input,

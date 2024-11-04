@@ -15,17 +15,18 @@
   padding: 2rem;
 }
 
-.gallery-main {
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
+.gallery-section {
+  max-width: 800px;
+  text-align: center;
+  margin: 2rem 0;
   text-align: center;
 }
 
 
 .gallery-logo-image {
+  margin-top: 200px;
+  margin-bottom: 200px;
   width: 300px;
-  height: auto;
 }
 
 
@@ -43,10 +44,6 @@
   color: #DBA555;                                                                         
 }
 
-.gallery-section {
-  margin: 3rem 0;
-  margin-bottom: 300px;
-}
 
 .section-heading {
   font-family: 'Cinzel Decorative', serif;
@@ -230,12 +227,12 @@
 @media (max-width: 768px) {
   
   .gallery-logo-image{
-    width: 30%;   
+    width: 125px;     
     margin-top: 200px;
     margin-bottom: 50px;
    } 
  
-   .gallery-section-title{
+   .gallery-title{
      font-size: 1.5rem;
      margin-bottom: 10px;
    }
@@ -271,8 +268,10 @@
 
 .gallery-description {
   font-size: 1rem;
+  margin-bottom: 100px;
 }
 
-
-
+  .section-heading {
+    font-size: 1.5rem;
+  }
 }

@@ -16,11 +16,21 @@
 
 }
 
+.contact-section{
+  max-width: 800px;
+  text-align: center;
+  margin: 2rem 0;
+  background-color: transparent; /* Remove background color */
+  color: #DBA555; /* Gold color */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove borders */
+  box-shadow: none; /* Remove shadows */
+}
+
 .contact-us-logo-image {
   margin-top: 200px;
   margin-bottom: 200px;
   width: 300px;
-  height: auto;
 }
 
 .contact-us-contact-section {
@@ -39,7 +49,7 @@
   font-weight: 700;
   font-size: 2.5rem;
   color: #DBA555; /* Gold color */
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   font-style: none;
 }
 
@@ -103,14 +113,14 @@
 
 
   .contact-us-logo-image{
-    width: 30%;   
+    width: 125px;     
     margin-top: 200px;
     margin-bottom: 50px;
    } 
  
    .contact-us-section-title{
      font-size: 1.5rem;
-     margin-bottom: 10px;
+     margin-bottom: 20px;
    }
  
    .contact-us-section-description {

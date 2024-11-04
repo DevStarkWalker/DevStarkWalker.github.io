@@ -50,22 +50,24 @@ const ContactUs = () => {
       <Header />
       <div className="contact-us-container">
       <img src={Newlogo} alt="Newlogo" className="contact-us-logo-image" />
-        <h2 className="contact-us-section-title">Contact Us</h2>
-        <p className="contact-us-section-description">
-          We’d love to hear from you! Whether you have a question about our services, need assistance, or just want to chat, feel free to reach out.
-        </p>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <label htmlFor="name" className="form-label">Name:</label>
-          <input type="text" id="name" className="form-input" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
+        <div className="contact-section">
+            <h2 className="contact-us-section-title">Contact Us</h2>
+          <p className="contact-us-section-description">
+            We’d love to hear from you! Whether you have a question about our services, need assistance, or just want to chat, feel free to reach out.
+          </p>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <label htmlFor="name" className="form-label">Name:</label>
+            <input type="text" id="name" className="form-input" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
 
-          <label htmlFor="email" className="form-label">Email:</label>
-          <input type="email" id="email" className="form-input" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
+            <label htmlFor="email" className="form-label">Email:</label>
+            <input type="email" id="email" className="form-input" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
 
-          <label htmlFor="message" className="form-label">Message:</label>
-          <textarea id="message" className="form-textarea" placeholder="Your Message" value={formData.message} onChange={handleChange} required></textarea>
+            <label htmlFor="message" className="form-label">Message:</label>
+            <textarea id="message" className="form-textarea" placeholder="Your Message" value={formData.message} onChange={handleChange} required></textarea>
 
-          <button type="submit" className="form-button">Send Message</button>
-        </form>
+            <button type="submit" className="form-button">Send Message</button>
+          </form>
+        </div>
       </div>
       <Footer />
     </div>

@@ -44,59 +44,61 @@ const Testimonial = () => {
     <div className="testimonial-page">
       <Header />
       <div className="testimonial-container">
-      <img src={Newlogo} alt="Newlogo" className="contact-us-logo-image" />
-        <h2 className="testimonial-title">Leave a Testimonial</h2>
-        <p className="testimonial-description">
-          We value your feedback. Please let us know how Novaeh Studios helped you and your business!
-        </p>
-        <form className="testimonial-form" onSubmit={handleSubmit}>
-          <label htmlFor="name" className="form-label">Name:</label>
-          <input
-            type="text"
-            id="name"
-            className="form-input"
-            placeholder="Your Name"
-            value={testimonialData.name}
-            onChange={handleChange}
-            required
-          />
+        <img src={Newlogo} alt="Newlogo" className="contact-us-logo-image" />
+          <div className="testimonial-section">
+            <h2 className="testimonial-title">Leave a Testimonial</h2>
+            <p className="testimonial-description">
+              We value your feedback. Please let us know how Novaeh Studios helped you and your business!
+            </p>
+            <form className="testimonial-form" onSubmit={handleSubmit}>
+              <label htmlFor="name" className="form-label">Name:</label>
+              <input
+                type="text"
+                id="name"
+                className="form-input"
+                placeholder="Your Name"
+                value={testimonialData.name}
+                onChange={handleChange}
+                required
+              />
 
-          <label htmlFor="company" className="form-label">Company:</label>
-          <input
-            type="text"
-            id="company"
-            className="form-input"
-            placeholder="Your Company"
-            value={testimonialData.company}
-            onChange={handleChange}
-            required
-          />
+              <label htmlFor="company" className="form-label">Company:</label>
+              <input
+                type="text"
+                id="company"
+                className="form-input"
+                placeholder="Your Company"
+                value={testimonialData.company}
+                onChange={handleChange}
+                required
+              />
 
-          <label htmlFor="service" className="form-label">Service Provided:</label>
-          <input
-            type="text"
-            id="service"
-            className="form-input"
-            placeholder="Service Provided"
-            value={testimonialData.service}
-            onChange={handleChange}
-            required
-          />
+              <label htmlFor="service" className="form-label">Service Provided:</label>
+              <input
+                type="text"
+                id="service"
+                className="form-input"
+                placeholder="Service Provided"
+                value={testimonialData.service}
+                onChange={handleChange}
+                required
+              />
 
-          <label htmlFor="message" className="form-label">Message:</label>
-          <textarea
-            id="message"
-            className="form-textarea"
-            placeholder="Your Message"
-            value={testimonialData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
+              <label htmlFor="message" className="form-label">Message:</label>
+              <textarea
+                id="message"
+                className="form-textarea"
+                placeholder="Your Message"
+                value={testimonialData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
 
-          <button type="submit" className="form-button">Submit Testimonial</button>
-        </form>
+            <button type="submit" className="form-button">Submit Testimonial</button>
+          </form>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
