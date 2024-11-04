@@ -249,7 +249,7 @@
 
 .flip-card-webpage{
   width: 360px; /* Adjusted width for landscape rectangle */
-  height: 180px;
+  height: 182px;
 }
 
 .media-item-game{
@@ -259,7 +259,7 @@
 
 .media-item-webpage{
   width: 360px; /* Adjusted width for landscape rectangle */
-  height: 180px;
+  height: 182px;
 }
 
 .media-grid{
@@ -274,4 +274,5 @@
   .section-heading {
     font-size: 1.5rem;
   }
+  
 }
