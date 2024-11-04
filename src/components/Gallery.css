@@ -16,7 +16,7 @@
 }
 
 .gallery-section {
-  max-width: 800px;
+  max-width: 100%;
   text-align: center;
   margin: 2rem 0;
   text-align: center;
@@ -56,14 +56,26 @@
 
 .media-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit for better centering */
   gap: 3rem; /* Uniform gap between items */
-  justify-content: center; /* Centers the grid items within the container */
   justify-items: center; /* Centers items within their grid cells */
   align-items: center; /* Center items vertically */
   width: 100%; /* Ensures the grid spans the entire container */
   margin-bottom: 100px;
 }
+
+/* For one or two items in the grid, center them */
+.media-grid[data-item-count="1"] {
+  grid-template-columns: 1fr; /* Single column */
+}
+
+.media-grid[data-item-count="2"] {
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+}
+
+.media-grid[data-item-count="3"] {
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+}
+
 
 /* Styles for logo items (square boxes) */
 .media-item-logo {
@@ -78,6 +90,7 @@
   justify-content: center;
   width: 250px; /* Square width */
   height: 250px; /* Square height */
+  overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -94,19 +107,13 @@
   justify-content: center;
   width: 480px; /* Adjusted width for landscape rectangle */
   height: 270px; /* Height to maintain 16:9 ratio */
+  overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Ensure consistent hover effects */
-.media-item-logo:hover,
-.media-item-game:hover,
-.media-item-webpage:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
 
 /* Flip card styles for logos */
-.flip-card-logo {
+.flip-card-logo, .flip-card-game, .flip-card-webpage {
   width: 250px;
   height: 250px;
   perspective: 1000px;
@@ -196,6 +203,7 @@
 
 .flip-card-webpage.flipped .flip-card-inner-webpage {
   transform: rotateY(180deg);
+  opacity: 100%;
 }
 
 .flip-card-front-webpage,
@@ -263,7 +271,9 @@
 }
 
 .media-grid{
-  gap: 10rem;
+  gap: 3rem;
+  grid-template-columns: 1fr !important;
+  width: 100%;
 }
 
 .gallery-description {

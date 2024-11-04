@@ -32,7 +32,7 @@ const Media = () => {
                     {/* Logos Section */}
                     <div className="gallery-section logos-section">
                         <h2 className="section-heading">Logos</h2>
-                        <div className="media-grid">
+                        <div className="media-grid" data-item-count="3">
                             {[{ src: Logo1, id: 'logo1', text: 'This bold and dynamic logo features two cartoon characters standing back-to-back, each wielding pressure washers, symbolizing teamwork and strength. The strong title "Grunts Pressure Washing" reflects the company’s reliable and tough cleaning services.' },
                               { src: Logo3, id: 'logo3', text: 'A sleek and minimalistic design, this logo showcases a simple yet striking chef illustration, combined with the bold letters "UC" for Unit Chef. It perfectly captures the essence of clean and efficient branding for a sports-focused Instagram page.' },
                               { src: Logo4, id: 'logo4', text: 'This elegant gold and black logo brings a touch of sophistication, featuring a beautiful butterfly, symbolizing transformation, hope and new beginnings. This logo highlights and aligns with their mission to guide clients to their luxurious dream home.' }].map((logo) => (
@@ -57,7 +57,7 @@ const Media = () => {
                     {/* Games Section */}
                     <div className="gallery-section games-section">
                         <h2 className="section-heading">Games</h2>
-                        <div className="media-grid">
+                        <div className="media-grid" data-item-count="1">
                             {[{ src: Game1, id: 'Game1', text: 'Chubby Chickens is a fun and chaotic multiplayer game that is in development by Novaeh Studios. The main idea is teamwork is key! Players control chubby, adorable chickens as they work together to navigate obstacle-filled levels while dodging incoming projectiles.' },].map((game) => (
                                 <div
                                     key={game.id}
@@ -80,7 +80,7 @@ const Media = () => {
                     {/* Webpages Section */}
                     <div className="gallery-section webpages-section">
                         <h2 className="section-heading">Webpages</h2>
-                        <div className="media-grid"> 
+                        <div className="media-grid"  data-item-count="2"> 
                         {[{ src: WebPage1, id: 'Web1', text: 'This portfolio represents the creative journey and expertise of our CEO, whose personal dedication to artistry and innovation has shaped the heart of our company. Over the years, it has evolved into a sophisticated display of unique projects and achievements, merging a refined artistic vision with technical precision.' },
                           { src: WebPage2, id: 'Web2', text: 'The Novaeh webpage was design and developed by Novaeh Studios. It provides information on our services and core beleifs, while showcasing our web development and design capabilities.'  }].map((webpage) => (
                                 <div
