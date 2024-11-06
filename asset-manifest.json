@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b74b3251.css",
+    "main.js": "/static/js/main.7dc6806c.js",
+    "static/media/Chubby Title Screen V1.png": "/static/media/Chubby Title Screen V1.167a9ebf745b62a67356.png",
+    "static/media/version 2.png": "/static/media/version 2.58ce4de963a2ab6340e6.png",
+    "static/media/Newlogo.png": "/static/media/Newlogo.b1a24d1291048d44bfb3.png",
+    "static/media/HOPE Logo.jpeg": "/static/media/HOPE Logo.7702183bbf386f33e8bd.jpeg",
+    "static/media/PersonalPortfolioPic.png": "/static/media/PersonalPortfolioPic.ae140496a07f4891bbde.png",
+    "static/media/Final Unit Chef Logo.png": "/static/media/Final Unit Chef Logo.3744d991660c49281728.png",
+    "static/media/NovaehPage.png": "/static/media/NovaehPage.f6ec416769b28004bde7.png",
+    "index.html": "/index.html",
+    "main.b74b3251.css.map": "/static/css/main.b74b3251.css.map",
+    "main.7dc6806c.js.map": "/static/js/main.7dc6806c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b74b3251.css",
+    "static/js/main.7dc6806c.js"
+  ]
+}
