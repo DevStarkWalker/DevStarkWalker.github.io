@@ -251,23 +251,23 @@
  
 
 .flip-card-game{
-  width: 360px; /* Adjusted width for landscape rectangle */
-  height: 202.5px;
+  width: 300px; /* Adjusted width for landscape rectangle */
+  height: 182.5px;
 }
 
 .flip-card-webpage{
-  width: 360px; /* Adjusted width for landscape rectangle */
-  height: 182px;
+  width: 300px; /* Adjusted width for landscape rectangle */
+  height: 182.5px;
 }
 
 .media-item-game{
-  width: 480px; /* Adjusted width for landscape rectangle */
-  height: 202.5px;
+  width: 300px; /* Adjusted width for landscape rectangle */
+  height: 182.5px;
 }
 
 .media-item-webpage{
-  width: 360px; /* Adjusted width for landscape rectangle */
-  height: 182px;
+  width: 300px; /* Adjusted width for landscape rectangle */
+  height: 182.5px;
 }
 
 .media-grid{
